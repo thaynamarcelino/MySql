@@ -1,6 +1,6 @@
-create database cadastro;
+CREATE DATABASE cadastro;
 
-create table pessoas(
+CREATE TABLE pessoas(
 nome varchar(30),
 idade tinyint(3),
 sexo char(1),
