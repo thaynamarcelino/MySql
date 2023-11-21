@@ -1,3 +1,5 @@
+-- Adicionar dados no banco
+-- Uso de DEFAULT para campos pré-definidos
 insert into pessoas
 (id, nome, nascimento, sexo, peso, altura, nacionalidade)
 values
