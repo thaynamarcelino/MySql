@@ -3,6 +3,7 @@ use cadastro;
 select * from gafanhotos;
 select * from cursos;
 
+-- Inserir registros
 insert into cursos values
 ('1', 'HTML4', 'Curso de HTML5', '40', '37', '2014'),
 ('2', 'Algoritmos', 'Lógica de Programação', '20', '15', '2014'),
@@ -15,7 +16,7 @@ insert into cursos values
 ('9', 'Cozinha Árabe', 'Aprenda a fazer Kibe', '40', '30', '2018'),
 ('10', 'YouTuber', 'Gerar polêmica e ganhar inscritos', '5', '2', '2018');
 
-
+-- Modificando linhas incorretas
 update cursos
 set nome = 'HTML5'
 where idcurso = '1';
@@ -24,16 +25,21 @@ update cursos
 set nome = 'PHP', ano = '2015'
 where idcurso = '4';
 
+-- Limitar a um registro apenas
 update cursos
 set nome = 'Java', ano = '2015', carga = '40'
 where idcurso = '5'
 limit 1;
 
+-- Apagar um registro
 delete from cursos
 where idcurso = '8';
 
+-- Apagar vários registros
 delete from cursos
 where ano = '2050'
 limit 2;
 
+-- Apagar todas as linhas mantendo a tabela
 truncate table cursos;
+-- truncate cursos;
