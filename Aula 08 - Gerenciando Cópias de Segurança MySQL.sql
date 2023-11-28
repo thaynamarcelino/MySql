@@ -8,3 +8,5 @@ describe gafanhotos;
 
 desc cursos; 
 drop database cadastro;
+
+-- Server > Data export
