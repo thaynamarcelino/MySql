@@ -5,16 +5,19 @@ select * from cursos
 order by nome;
 
 select * from cursos
-order by nome desc;
+order by nome desc; 
 
+-- DESC de descedente
 desc cursos;
 
+-- Selecionar algumas colunas
 select nome, carga, ano from cursos
 order by nome;
 
 select ano, nome, carga from cursos
 order by ano, nome;
 
+-- Filtrar linhas
 select * from cursos
 where ano = '2016'
 order by nome;
@@ -40,7 +43,7 @@ where ano >= 2016
 order by ano, nome;
 
 select nome, descricao, ano from cursos
-where ano != 2016
+where ano != 2016 -- diferente de 2016
 order by ano, nome;
 
 select nome, descricao, ano from cursos
@@ -55,8 +58,10 @@ select nome, descricao, ano from cursos
 where ano in (2014, 2016, 2020)
 order by ano;
 
+-- Uma condiçao e outra
 select nome, carga, totaulas from cursos
 where carga > 35 and totaulas < 30;
 
+-- Uma condição ou outra
 select nome, carga, totaulas from cursos
 where carga > 35 or totaulas < 30;
